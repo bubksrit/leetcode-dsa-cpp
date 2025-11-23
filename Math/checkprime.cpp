@@ -21,5 +21,5 @@ int main(){
     cin>>n;
     chkprm(n);
     return 0;
-
+    
 }
