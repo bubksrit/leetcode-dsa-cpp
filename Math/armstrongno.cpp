@@ -1,6 +1,13 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
+int power(int n,int cnt ){
+    int pw=1;
+    while(cnt>0){
+        pw*=n;
+        cnt--;
+    }
+    return pw;
+}
 int arm(int n){
     int rem,orn,cnt;
     int sum=0,td=0;
@@ -14,7 +21,7 @@ int arm(int n){
     }
     while(n>0){
     rem=n%10;
-    sum+=pow(rem,td);
+    sum+=power(rem,td);
     n=n/10;
     }
     if(orn==sum)
