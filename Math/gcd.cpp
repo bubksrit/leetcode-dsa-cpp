@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//o(log(min(a,b)))
 int gcd(int a,int b){
     int g=1;
     for(int i=1;i<=min(a,b);i++){
@@ -9,7 +10,9 @@ int gcd(int a,int b){
     }
     return g;
 }
-//eucladian theorem
+//eucladean theorem
+//o(log phi min(a,b))
+//better time complexity
 int gcd2(int a,int b){
     while(a>0 && b>0){
         if (a>b)
