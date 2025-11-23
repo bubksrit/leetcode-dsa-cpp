@@ -1,6 +1,7 @@
 // Problem: Reverse Integer (LeetCode #7)
 // Time Complexity: O(log x)
 // Space Complexity: O(1)
+#include <climits>
 class Solution{
 public:
 
