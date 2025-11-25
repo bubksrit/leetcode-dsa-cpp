@@ -12,13 +12,14 @@ int main(){
     int n;
     cout<<"enter n";
     cin>>n;
-    int ar[100];
+    int ar[n];
     cout<<"enter elements";
     for(int k=0;k<n;k++)
     cin>>ar[k];
     f(0,ar,n);
+    cout<<"swapped elements:";
     for(int k=0;k<n;k++)
-    cout<<"swapped elements:"<<ar[k]<<endl;
+    cout<<ar[k]<<endl;
     return 0;
 
 }
